@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node --env-file .env --watch src/index.ts",
     "start": "node --env-file .env dist/index.js",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,8 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^26.1.1",
     "@types/pg": "^8.20.0",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
   },
   "dependencies": {
     "express": "^5.2.1",
