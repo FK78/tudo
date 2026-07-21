@@ -5,14 +5,14 @@ import {
   emailExists,
   findUserByEmail,
   findUserById,
-} from "../queries/authQueries.ts";
+} from "../queries/auth.queries.ts";
 import { compareHash, hashString } from "../utils/auth.ts";
-import { issueTokenPair, rotateTokenPair } from "./tokenService.ts";
+import { issueTokenPair, rotateTokenPair } from "./token.service.ts";
 import jwt from "jsonwebtoken";
 import {
   findRefreshTokenByJti,
   revokeTokenFamily,
-} from "../queries/tokenQueries.ts";
+} from "../queries/token.queries.ts";
 import { withTransaction } from "../db/db.ts";
 
 type User = {

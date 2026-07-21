@@ -1,6 +1,6 @@
 import express from "express"
 import { validate } from "../middleware/validate.ts"
-import { createTodo, deleteTodo, retrieveTodos, updateTodo } from "../controllers/todoController.ts";
+import { createTodo, deleteTodo, retrieveTodos, updateTodo } from "../controllers/todo.controller.ts";
 import { authenticate } from "../middleware/authenticate.ts";
 import { rateLimiter } from "../middleware/rateLimiter.ts";
 

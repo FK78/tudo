@@ -1,7 +1,7 @@
 import type { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import { AppError } from "../errors/AppError.ts";
-import { findUserById } from "../queries/authQueries.ts";
+import { findUserById } from "../queries/auth.queries.ts";
 
 export const authenticate = async (
   req: Request,

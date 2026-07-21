@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { loginUser, refreshTokens, registerUser } from "../services/authService.ts";
+import { loginUser, refreshTokens, registerUser } from "../services/auth.service.ts";
 
 export const register = async (req: Request, res: Response) => {
   const { accessToken, refreshToken } = await registerUser(req.body);

@@ -5,7 +5,7 @@ import {
   getUserIdForTodoById,
   saveTodo,
   updateTodo,
-} from "../queries/todoQueries.ts";
+} from "../queries/todo.queries.ts";
 import type { TodoFilters } from "../types/todos.ts";
 
 type Todo = {

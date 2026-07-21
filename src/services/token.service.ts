@@ -4,7 +4,7 @@ import {
   linkReplacedToken,
   markTokenReplaced,
   saveRefreshToken,
-} from "../queries/tokenQueries.ts";
+} from "../queries/token.queries.ts";
 import type { PoolClient } from "pg";
 import type { RefreshToken } from "../types/tokens.ts";
 import type { AuthUser } from "../types/auth.ts";

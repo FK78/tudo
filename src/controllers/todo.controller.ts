@@ -4,7 +4,7 @@ import {
   editTodo,
   removeTodo,
   getTodos,
-} from "../services/todoService.ts";
+} from "../services/todo.service.ts";
 import { SORT_COLUMNS, SORT_ORDERS } from "../types/todos.ts";
 
 export const createTodo = async (req: Request, res: Response) => {

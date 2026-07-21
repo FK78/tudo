@@ -28,7 +28,7 @@ export const createUser = async (
 
   const row = result.rows[0];
   if (!row) {
-    throw new Error("Failed to inser user");
+    throw new Error("Failed to insert user");
   }
   return mapUserRow(row);
 };
